@@ -31,5 +31,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.PACK_NAME }}v${{steps.version.outputs.value
+          name: ${{ env.PACK_NAME }}v${{steps.version.outputs.value}}
           path: ${{ env.PACK_NAME }}.opk
