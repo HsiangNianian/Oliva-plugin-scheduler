@@ -20,7 +20,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 '''
 import OlivOS
-import OlivaXXX
+import OlivaScheduler
 
 class Event(object):
     def init(plugin_event, Proc):
@@ -36,7 +36,7 @@ class Event(object):
         pass
 
     def menu(plugin_event, Proc):
-        if plugin_event.data.namespace == 'DailyNews':  # type: ignore
+        if plugin_event.data.namespace == 'OlivaScheduler':  # type: ignore
             if plugin_event.data.event == 'Menu_Config':  # type: ignore
                 logg("有笨蛋打开了配置")
             elif plugin_event.data.event == 'Menu_About':  # type: ignore
